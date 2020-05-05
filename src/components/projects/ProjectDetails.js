@@ -6,7 +6,9 @@ export const ProjectDetails = (props) => {
     <div className="container section project-details">
       <div className="card z-depth-0">
         <div className="card-content">
-          <span className="card-title">Project Title</span>
+          <span className="card-title">
+            Project Title - {props.match.params.id}
+          </span>
           <div className="card-action great lighten-4 grey-text">
             <div>Posted by me</div>
             <div className="">2nd September, 2am</div>

@@ -6,6 +6,9 @@ import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Dashboard from "./components/dashboard/Dashboard";
 import { ProjectDetails } from "./components/projects/ProjectDetails";
+import SignedIn from "./components/auth/SignedIn";
+import SignUp from "./components/auth/SignUp";
+import CreateProject from "./components/projects/CreateProject";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Dashboard} />
           <Route path="/project/:id" component={ProjectDetails} />
+          <Route path="/signin" component={SignedIn} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/create" component={CreateProject} />
         </Switch>
       </div>
     </BrowserRouter>
