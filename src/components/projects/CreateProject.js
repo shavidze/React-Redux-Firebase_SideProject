@@ -8,7 +8,8 @@ class CreateProject extends Component {
   };
 
   handleChange = (e) => {
-    this.setState({ [e.target.id]: [e.target.value] });
+    console.log("ee =", e.target);
+    this.setState({ [e.target.id]: e.target.value });
   };
 
   handeleSubmit = (e) => {
