@@ -4,6 +4,7 @@ import { ProjectList } from "../projects/ProjectList";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
+
 export class Dashboard extends Component {
   render() {
     console.log("props -", this.props);

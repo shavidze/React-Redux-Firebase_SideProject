@@ -5,7 +5,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Dashboard from "./components/dashboard/Dashboard";
-import { ProjectDetails } from "./components/projects/ProjectDetails";
+import ProjectDetails from "./components/projects/ProjectDetails";
 import SignedIn from "./components/auth/SignedIn";
 import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject";
