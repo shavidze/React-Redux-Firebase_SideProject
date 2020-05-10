@@ -10,6 +10,7 @@ export class Dashboard extends Component {
     console.log("props -", this.props);
     const { projects, auth } = this.props;
     if (!auth.uid) {
+      
     }
     return (
       <div className="dashboard container">
