@@ -4,11 +4,13 @@ import { ProjectList } from "../projects/ProjectList";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
-
+import { Redirect } from "react-router-dom";
 export class Dashboard extends Component {
   render() {
     console.log("props -", this.props);
-    const { projects } = this.props;
+    const { projects, auth } = this.props;
+    if (!auth.uid) {
+    }
     return (
       <div className="dashboard container">
         <div className="row">
@@ -27,6 +29,7 @@ export class Dashboard extends Component {
 const mapStateToProps = (state) => {
   return {
     projects: state.firestore.ordered.projects,
+    auth: state.firebase.auth,
   };
 };
 
