@@ -15,7 +15,6 @@ class SignedIn extends Component {
 
   handeleSubmit = (e) => {
     e.preventDefault();
-    console.log("Ageraa");
     this.props.signIn(this.state);
   };
   render() {

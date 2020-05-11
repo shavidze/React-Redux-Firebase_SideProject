@@ -9,13 +9,11 @@ class CreateProject extends Component {
   };
 
   handleChange = (e) => {
-    console.log("ee =", e.target);
     this.setState({ [e.target.id]: e.target.value });
   };
 
   handeleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
     this.props.createProject(this.state);
     this.props.history.push("/");
   };
